@@ -1,0 +1,23 @@
+.header {
+  margin-top: 16px;  
+  position: fixed;
+  width: 100%;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  right: 0;  
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+  }
+}

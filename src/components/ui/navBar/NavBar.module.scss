@@ -1,0 +1,121 @@
+.nav {
+  display: flex;
+  align-items: center;
+  &List {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    transition: all 0.5s ease-in-out;
+    @media (max-width: 576px) {      
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: rgba(24, 39, 51, 0.85);
+      width: 100%;
+      padding: 15px;
+      height: 100vh;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      z-index: 7;
+      transform: scale(0.3);
+      opacity: 0;
+      visibility: hidden;
+      &.open {        
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+      }
+      li {
+        padding: 15px;
+        border-bottom: 1px solid rgba(93, 92, 92, 0.2);
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &__listLink {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: white;
+    position: relative;
+    @media (max-width: 576px) {
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 0%;
+      height: 1px;
+      background: #fff;
+      left: 0;
+      bottom: -2%;
+      transition: 0.4 ease-in-out;
+      box-shadow: #5454d4 0 0 4px 0;
+    }
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.burger {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: none;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  z-index: 15;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  @media (max-width: 576px) {
+    display: flex;
+  }
+
+  span {
+    height: 2px;
+    width: 30px;
+    border-radius: 2px;
+    transform: scale(1);
+    background-color: white;
+    transition: all 0.4s ease;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    border-radius: 2px;
+    background-color: white;
+    transition: all 0.4s ease;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+}
+
+.navList.open ~ .burger span {
+  transform: scale(0);
+}
+.navList.open ~ .burger::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.navList.open ~ .burger::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
