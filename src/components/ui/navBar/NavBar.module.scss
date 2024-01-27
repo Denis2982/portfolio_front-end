@@ -41,6 +41,7 @@
     line-height: 1.3;
     color: white;
     position: relative;
+    transition: all 0.4s ease-in-out;
     @media (max-width: 576px) {
       font-size: 22px;
       letter-spacing: 2px;
@@ -53,16 +54,24 @@
       display: block;
       width: 0%;
       height: 1px;
-      background: #fff;
+      background: rgb(234, 179, 8);
       left: 0;
       bottom: -2%;
-      transition: 0.4 ease-in-out;
-      box-shadow: #5454d4 0 0 4px 0;
+      transition: width 0.4s ease-in-out;
+      
     }
 
     &:hover {
-      color: red;
+      color: rgb(234, 179, 8);
     }
+
+    &.active {
+      color: rgb(234, 179, 8);  
+                  
+    }
+    &.active::after{
+      width: 100%; 
+    }  
   }
 }
 

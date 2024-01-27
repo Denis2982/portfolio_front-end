@@ -13,7 +13,13 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: "Urbanist", sans-serif;
 }
+
+// html::-webkit-scrollbar {
+//   width: 0px;  
+//   background: transparent;  
+// }
 
 a {
   text-decoration: none;
@@ -42,6 +48,8 @@ h1, h2, h3, p{
   font-size: inherit;
   margin: 0;
 }
+
+
 
 .container {
   max-width: 1248px;

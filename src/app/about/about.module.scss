@@ -1,0 +1,102 @@
+.about {
+  font-family: "Urbanist", sans-serif;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  min-height: calc(100vh - 60px);
+  color: rgb(203, 213, 225);
+
+  &__block {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 10px;
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    &_title {
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    &_text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    color: white;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+  }
+  &__btn:hover {
+    background: rgb(234, 179, 8);
+    color: white;
+    box-shadow: 0px 0px 50px rgb(234, 179, 8);
+    transition-delay: 0.3s;
+  }
+  &__btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid rgb(234, 179, 8);
+    border-left: 2px solid rgb(234, 179, 8);
+    transition: 0.5s;
+  }
+  &__btn:hover::before {
+    width: 100%;
+    height: 100%;
+  }
+  &__btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid rgb(234, 179, 8);
+    border-right: 2px solid rgb(234, 179, 8);
+    transition: 0.5s;
+  }
+  &__btn:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  // &__img {
+  // }
+
+  &__skills {
+    &_title {
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+    &_text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      max-width: 60%;
+    }
+  }
+}
