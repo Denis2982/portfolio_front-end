@@ -4,6 +4,10 @@
   padding-bottom: 100px;
   min-height: calc(100vh - 60px);
   color: rgb(203, 213, 225);
+  @media (max-width: 576px) {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
 
   &__block {
     display: grid;
@@ -15,7 +19,7 @@
   &__content {
     &_title {
       font-weight: 700;
-      font-size: 80px;
+      font-size: clamp(40px, 6.4vw, 80px);
       line-height: 1;
       margin-bottom: 30px;
     }
@@ -87,7 +91,7 @@
   &__skills {
     &_title {
       font-weight: 700;
-      font-size: 80px;
+      font-size: clamp(40px, 6.4vw, 80px);
       line-height: 1;
       margin-bottom: 30px;
     }

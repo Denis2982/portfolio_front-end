@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&family=Urbanist:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&family=Urbanist:wght@300;400;500;600;700&display=swap");
 
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Urbanist', sans-serif;
@@ -17,13 +17,14 @@ body {
 }
 
 // html::-webkit-scrollbar {
-//   width: 0px;  
-//   background: transparent;  
+//   width: 0px;
+//   background: transparent;
 // }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-size: inherit;
 }
 
 ul {
@@ -38,25 +39,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   position: relative;
-  min-height: 100vh; 
-  color: white;  
+  min-height: 100vh;
+  color: white;
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
   font-size: inherit;
   margin: 0;
 }
-
-
 
 .container {
   max-width: 1248px;
   padding-left: 24px;
   padding-right: 24px;
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 100%;
+  @media (max-width: 576px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .backgroundMain {
@@ -75,7 +81,7 @@ h1, h2, h3, p{
 .backgroundImage {
   position: absolute;
   inset: 0;
-  background-image: url('/noisetexture.jpg');
+  background-image: url("/noisetexture.jpg");
   pointer-events: none;
   z-index: -40;
   height: 100%;
@@ -86,9 +92,3 @@ h1, h2, h3, p{
 .backgroundBody {
   background-color: rgb(15 23 42);
 }
-
-
-
-  
-
-  

@@ -1,0 +1,24 @@
+.portfolio {
+  min-height: calc(100vh - 60px);
+  padding-top: 150px;
+  padding-bottom: 100px;
+  @media (max-width: 576px) {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 6.4vw, 80px);
+    line-height: 1;
+    color: rgb(203, 213, 225);
+    margin-bottom: 40px;
+  }
+
+  &__works {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+  }
+}

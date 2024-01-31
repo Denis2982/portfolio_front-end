@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import styles from "./about.module.scss";
 import clsx from "clsx";
 import Link from "next/link";
+import Skills from "@/components/skills/Skills";
+import { SkillsItem } from "../constans";
 
 export const metadata: Metadata = {
   title: "Portfolio Front-end │ About",
@@ -51,6 +53,7 @@ export default function About() {
           JavaScript (ES6+), React, Gulp, NPM, Git. I develop frontend
           programming skills and work with the DOM.
         </p>
+        <Skills skillBlok={SkillsItem}/>
       </div>
     </div>
   );
