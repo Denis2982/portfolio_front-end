@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__block {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: block;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 0px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 16px;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(50px);
+}
+
+.form {
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  align-self: center;
+  width: 50%;
+  flex-grow: 1;
+  border: 0px;
+  padding: 15px 50px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  transition: 1s;
+  box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right top,
+    rgb(234, 179, 8),
+    rgb(254, 240, 138),
+    rgb(234, 179, 8)
+  );
+  color: rgb(3, 5, 58);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  transition: 1s;
+}
+
+._error {
+  box-shadow: 0 0 15px red;
+}

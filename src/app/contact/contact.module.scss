@@ -6,10 +6,10 @@
   min-height: calc(100vh - 60px);
   display: flex;
   align-items: center;
-  justify-content: center;  
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  justify-content: center;
+  // overflow: hidden;
+  // overflow-y: hidden;
+  // overflow-x: hidden;
 }
 
 .contactField {
@@ -23,7 +23,7 @@
   position: relative;
   background: #fff;
   min-height: 600px;
-  min-width: 600px;
+  width: 600px;  
   background: linear-gradient(
     to right bottom,
     rgba(186, 183, 183, 0.2),
@@ -36,31 +36,13 @@
   flex-flow: column;
   box-shadow: 0 0 5px 0 rgba(22, 22, 22, 0.1);
 }
-.form {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -3.5%;
-    width: 107%;
-    height: 100%;
-    border-radius: 10px;
-    
-    box-shadow: 0 0 5px 5px rgba(34, 34, 34, 0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-  &._sending::after {
-    opacity: 1;
-    visibility: visible;
-  }
-}
 
 .contactTitle {
-  // @include text($ff, 700, 40px, 60px, $white);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4;
+  color: white;
   position: relative;
-  color: #fff;
   text-align: center;
   text-transform: uppercase;
   margin-top: 50px;
@@ -69,12 +51,12 @@
 }
 
 .contactText {
-  
   position: relative;
   color: #fff;
   text-align: center;
   padding: 10px;
   border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
 }
 
 .contactForm {
@@ -87,89 +69,4 @@
   width: 100%;
 }
 
-.contactForm .field {
-  margin: 30px 0;
-  text-align: center;
-  width: 100%;
-}
 
-.contactForm .field label {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 5px;
-  letter-spacing: 2px;
-}
-
-.contactForm .field input,
-.contactForm .field textarea {
-  width: 100%;
-  
-  border: 0px;
-  padding: 15px 20px;
-  border-radius: 10px;
-  outline: none;
-  box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
-  background: transparent;
-  backdrop-filter: blur(10px);
-  color: black;
-  font-size: 16px;
-}
-
-// ::placeholder {
-//   color: white;
-//   letter-spacing: 2px;
-// }
-
-.contactForm .field input:focus,
-.contactForm .field textarea:focus {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.2)
-  );
-  backdrop-filter: blur(50px);
-}
-
-.contactForm form {
-  width: 100%;
-}
-
-.contactField .button-field {
-  display: flex;
-  flex-flow: column;
-}
-
-.contactForm .field button {
-  
-  flex-grow: 1;
-  border: 0px;
-  padding: 15px 50px;
-  outline: none;
-  text-align: center;
-  cursor: pointer;
-  margin: 10px;
-  transition: 1s;
-  box-shadow: 0 2px 5px 0 rgba(50, 50, 50, 0.2);
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.contactForm .field button:hover {
-  transform: translateY(-3px);
-  transition: 1s;
-}
-
-.contactForm .button-contact {
-  background: linear-gradient(
-    to right bottom,
-    rgb(223, 55, 153),
-    rgb(202, 44, 128)
-  );
-  color: #fff;
-}
-
-
-
-._error {
-  box-shadow: 0 0 15px red;
-}

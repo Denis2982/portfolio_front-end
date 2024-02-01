@@ -15,11 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="backgroundBody">
-      <body >
+      <body>
         <Header />
         {children}
         <div className="backgroundMain" />
-        <div className="backgroundImage"></div>
+        <div className="backgroundImage"></div>        
         <Footer />
       </body>
     </html>
