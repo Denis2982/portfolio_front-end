@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import Skills from "@/components/skills/Skills";
 import { SkillsItem } from "../constans";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Portfolio Front-end │ About",
@@ -43,7 +44,14 @@ export default function About() {
             <span className={styles.about__btn_title}>Download CV</span>
           </Link>
         </div>
-        <div className={styles.about__img}></div>
+        <div className={styles.about__img}>
+          <Image
+            src="/about_1.png"
+            alt="image about"
+            width={600}
+            height={600}
+          />
+        </div>
       </div>
       <div className={styles.about__skills}>
         <h2 className={styles.about__skills_title}>What I use</h2>
@@ -53,7 +61,7 @@ export default function About() {
           JavaScript (ES6+), React, Gulp, NPM, Git. I develop frontend
           programming skills and work with the DOM.
         </p>
-        <Skills skillBlok={SkillsItem}/>
+        <Skills skillBlok={SkillsItem} />
       </div>
     </div>
   );

@@ -143,8 +143,8 @@ export const SkillsItem = [
     src: "/nextjs.svg",    
   },
   {
-    title: "WordPress",
-    desc: "Installation and configuration, Creating and customizing themes, Working with plugins, Creating and managing content, Optimization and security",
-    src: "/wordpress.svg",    
+    title: "Tailwind CSS",
+    desc: "A high-performance CSS library that provides a set of pre-built classes for fast and flexible development of user interfaces.",
+    src: "/tailwind.svg",    
   },
 ];
