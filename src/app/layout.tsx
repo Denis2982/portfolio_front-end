@@ -5,7 +5,7 @@ import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Portfolio Front-end",
-  description: "My portfolio",
+  description: "My portfolio front-end developer",
 };
 
 export default function RootLayout({

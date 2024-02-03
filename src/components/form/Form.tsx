@@ -26,7 +26,7 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          setSpinner(false);          
+          setSpinner(false);
           MySwal.fire({
             icon: "success",
             iconColor: "green",
@@ -36,7 +36,7 @@ const ContactForm = () => {
           });
         },
         (error) => {
-          setSpinner(false);          
+          setSpinner(false);
           MySwal.fire({
             icon: "error",
             iconColor: "red",

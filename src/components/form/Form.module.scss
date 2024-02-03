@@ -15,6 +15,9 @@
     letter-spacing: 2px;
     color: white;
     margin-bottom: 5px;
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
   }
 
   &__input {
@@ -28,6 +31,11 @@
     backdrop-filter: blur(10px);
     color: white;
     font-size: 16px;
+    @media (max-width: 576px) {
+      font-size: 14px;
+      border-radius: 6px;
+      padding: 5px 10px;
+    }
     &::placeholder {
       color: rgba(255, 255, 255, 0.4);
     }
@@ -77,6 +85,13 @@
   color: rgb(3, 5, 58);
   @media (max-width: 768px) {
     width: 80%;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
   }
 }
 
