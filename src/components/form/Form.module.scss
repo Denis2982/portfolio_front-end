@@ -75,6 +75,9 @@
     rgb(234, 179, 8)
   );
   color: rgb(3, 5, 58);
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 }
 
 .btn:hover {

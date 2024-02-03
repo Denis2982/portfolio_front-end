@@ -28,12 +28,18 @@ const NavBar = ({ navLinks }: Props) => {
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
           return (
-            <li className={`${styles.nav__listLink} ${isActive ? styles.active : ""}`} key={link.name}>
+            <li
+              className={`${styles.nav__listLink} ${
+                isActive ? styles.active : ""
+              }`}
+              key={link.name}
+            >
               <Link href={link.href}>{link.name}</Link>
             </li>
           );
-        })}        
+        })}
       </ul>
+
       <button className={styles.burger} onClick={toggleMenu}>
         <span></span>
       </button>

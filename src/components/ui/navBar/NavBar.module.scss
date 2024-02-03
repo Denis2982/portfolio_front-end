@@ -1,27 +1,29 @@
 .nav {
   display: flex;
   align-items: center;
+
   &List {
     display: flex;
     align-items: center;
     gap: 24px;
     transition: all 0.5s ease-in-out;
-    @media (max-width: 576px) {      
+    @media (max-width: 576px) {
       flex-direction: column;
       position: fixed;
       top: 80px;
       left: 0;
       right: 0;
-      background-color: rgba(24, 39, 51, 0.85);
+      background-color: rgb(76, 89, 107);
       width: 100%;
       padding: 15px;
-      height: 100vh;
-      border-top: 1px solid rgba(255, 255, 255, 0.5);
-      z-index: 7;
+      height: auto;
+      z-index: 1000;
       transform: scale(0.3);
       opacity: 0;
       visibility: hidden;
-      &.open {        
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px rgb(203, 213, 225);
+      &.open {
         transform: scale(1);
         opacity: 1;
         visibility: visible;
@@ -58,7 +60,6 @@
       left: 0;
       bottom: -2%;
       transition: width 0.4s ease-in-out;
-      
     }
 
     &:hover {
@@ -66,12 +67,11 @@
     }
 
     &.active {
-      color: rgb(234, 179, 8);  
-                  
+      color: rgb(234, 179, 8);
     }
-    &.active::after{
-      width: 100%; 
-    }  
+    &.active::after {
+      width: 100%;
+    }
   }
 }
 
@@ -83,7 +83,7 @@
   justify-content: end;
   align-items: center;
   position: relative;
-  z-index: 15;
+  z-index: 1500;
   width: 30px;
   height: 20px;
   cursor: pointer;

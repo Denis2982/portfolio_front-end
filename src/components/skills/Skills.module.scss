@@ -2,19 +2,19 @@
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 24px; 
+    gap: 24px;
     @media (max-width: 992px) {
       grid-template-columns: 1fr 1fr 1fr;
-    }   
+    }
     @media (max-width: 768px) {
       grid-template-columns: 1fr 1fr;
-    }   
+    }
     @media (max-width: 576px) {
       grid-template-columns: 1fr;
-    }   
+    }
   }
   &__listItem {
-    display: grid;    
+    display: grid;
     grid-template-rows: minmax(70px, auto) auto 1fr;
     text-align: center;
     gap: 20px;
@@ -23,6 +23,12 @@
     border-radius: 10px;
     @media (max-width: 1200px) {
       padding: 15px;
+    }
+    @media (max-width: 576px) {
+      gap: 15px;
+      padding: 20px;
+      max-width: 300px;
+      margin-inline: auto;
     }
   }
   &__listIcon {
@@ -44,5 +50,5 @@
     line-height: 1.3;
     color: white;
     margin-right: 15px;
-  } 
+  }
 }

@@ -10,6 +10,10 @@
   // overflow: hidden;
   // overflow-y: hidden;
   // overflow-x: hidden;
+  @media (max-width: 576px) {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }
 
 .contactField {
@@ -17,13 +21,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    min-height: auto;
+  }
 }
 
 .contactBackground {
   position: relative;
   background: #fff;
   min-height: 600px;
-  width: 600px;  
+  width: 600px;
   background: linear-gradient(
     to right bottom,
     rgba(186, 183, 183, 0.2),
@@ -35,6 +42,9 @@
   display: flex;
   flex-flow: column;
   box-shadow: 0 0 5px 0 rgba(22, 22, 22, 0.1);
+  @media (max-width: 768px) {
+    width: 450px;
+  }
 }
 
 .contactTitle {
@@ -68,5 +78,3 @@
   padding-inline: 20px;
   width: 100%;
 }
-
-

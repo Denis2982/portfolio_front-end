@@ -7,10 +7,10 @@ import AtomModel from "@/components/model/AtomModel";
 export default function Home() {
   return (
     <div className={clsx(styles.main__inner, "container")}>
-      <div className={styles.left}>
+      <div className={styles.main__left}>
         <Hero />
       </div>
-      <div className={styles.test}>
+      <div className={styles.main__right}>
         <AtomModel />        
       </div>     
     </div>
