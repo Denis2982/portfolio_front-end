@@ -34,7 +34,7 @@ export const navItems = [
 export const projectsItem = [
   {
     title: "CarHub",
-    tools: "HTML5 / SCSS / JavaScript",
+    tools: "Next JS / TypeScript / Tailwind CSS",
     image: "/work_1.jpg",
     alt: "image work CarHub",
     urlPreview: "https://carhub-scwy.vercel.app/",
