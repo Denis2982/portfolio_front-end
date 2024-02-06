@@ -33,6 +33,14 @@ export const navItems = [
 
 export const projectsItem = [
   {
+    title: "CarHub",
+    tools: "HTML5 / SCSS / JavaScript",
+    image: "/work_1.jpg",
+    alt: "image work CarHub",
+    urlPreview: "https://carhub-scwy.vercel.app/",
+    urlGit: "https://github.com/Denis2982/carhub",
+  },
+  {
     title: "LogoIpsum",
     tools: "HTML5 / SCSS / GULP / Swiper JS / JavaScript",
     image: "/work_9.jpg",
@@ -96,14 +104,7 @@ export const projectsItem = [
     urlPreview: "https://denis2982.github.io/Zone/",
     urlGit: "https://github.com/Denis2982/Zone",
   },
-  {
-    title: "Oculus",
-    tools: "HTML5 / SCSS / JavaScript",
-    image: "/work_3.jpg",
-    alt: "image work Oculus",
-    urlPreview: "https://denis2982.github.io/oculus/",
-    urlGit: "https://github.com/Denis2982/oculus",
-  },
+  
 ];
 
 export const SkillsItem = [
